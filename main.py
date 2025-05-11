@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import librosa
 import IPython.display as ipd
+from matplotlib.mlab import magnitude_spectrum
 from pydub import AudioSegment
 from pydub.playback import play
 # Note: Import ffmpeg
@@ -28,6 +29,8 @@ print(audio_c4.shape) # c4 is the signal
 # Extract Fourier Transform Coefficients to have the #bins = #samples
 audio_ft = np.fft.fft(audio_c4)
 print(audio_ft.shape)
+magnitude_spectrum_audio = np.abs(audio_ft)
+print(magnitude_spectrum_audio[0])
 
 # ----- Plotting the Magnitude Spectrum -----
 # ----- Display Graphical Overview -----
