@@ -2,6 +2,8 @@
 A lightweight Python tool to visualise and analyse the frequency content of audio signals using the Fast Fourier Transform (FFT). 
 This project displays both static and animated magnitude spectrum visualisations along with real-time audio playback.
 
+![Example Image]()
+
 ## Features
 - **Static Spectrum Plot**: Displays a single-frame magnitude spectrum of the full signal.
 - **Animated Spectrum Plot**: Visualises frequency evolution over time, synchronised with its respective audio playback.
